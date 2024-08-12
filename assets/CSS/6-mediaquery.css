@@ -1,0 +1,278 @@
+@import url('./5-form.css');
+
+
+/* Adecuación de Pantalla a Munitor portatil */
+@media ( max-width: 1366px ) {  
+    body {
+        width:  100% ;
+        height: auto ;
+        margin: 0 ;    /* Centra el contenido horizontalmente */
+        padding:0 ;    /* Añade un padding para asegurar que el contenido no toque los bordes */
+    }
+
+    .titulo.texto-blanco {
+        margin: 1rem ;
+    }
+
+    #form-login .field-user {
+        margin: 1rem 0 ; 
+    }
+
+    #form-login .btn {
+        margin: 1rem ; 
+    }
+
+    section.panel-bienvenida .img-login {
+        margin:  0 auto ;
+        padding: 0 ;
+    }
+}
+
+@media ( max-width:1024px ) {
+
+    /*Listo desde 768px x 1024px*/
+    .login {
+        display:        flex ;
+        flex-direction: column ;
+        width:          100% ;
+    }
+
+    .login .panel-ingreso {
+        width:   100% ;
+        height:  60% ;
+        margin:  0 ;
+        padding: 0 ;
+        order:   2 ;
+    }
+
+    .login .panel-ingreso .titulo {
+        align-items: center ;
+    }
+
+    .login .panel-ingreso label:nth-child(1) {
+        font-size: 2rem ;
+    }
+
+    .login .panel-ingreso label:nth-child(2) {
+        font-size: 1rem ;
+    }
+
+    .login .panel-ingreso .img-usuario {
+        width:  120px ;
+        height: 120px ;
+        margin: .5rem ;
+        padding:.5rem ;
+    }
+
+    .login .panel-ingreso .img-usuario img {
+        width:  100% ;
+        height: 100% ;
+    }
+
+    .login .panel-bienvenida {
+        width:  100% ;
+        height: 40% ;
+        order:  1 ;
+    }
+
+    .login .panel-bienvenida > article {
+        margin:  1rem auto 0 auto ;
+        padding: 1rem auto 0 auto ;
+    }
+
+    .login .panel-bienvenida h1 {
+        margin: .5rem ;
+    }
+
+    .login .panel-bienvenida p {
+        margin: .5rem auto 0 auto ;
+        padding:.5rem ;
+    }
+
+    .login .panel-bienvenida .img-login {
+        margin: .25rem auto 0 ;
+    }
+
+    .login .panel-bienvenida .img-login picture {
+        max-width:  80px ;
+        max-height: 70px ;
+    }
+
+    .login .panel-bienvenida .img-login img {
+        width:  100% ;
+        height: 100% ;
+    }
+
+    .field-user #username {
+        width: 65vw ;
+    }
+
+    .field-password #password {
+        width: 65vw ;
+    }
+    
+    section.panel-bienvenida h1 {
+        font-size: 2rem ;
+    }
+
+    .login .panel-bienvenida p {
+        font-size: 1.75rem ;
+    }
+
+    #form-login {
+        margin: 0 auto ;
+    }
+
+    #form-login .field-user {
+        margin: .4rem auto ; 
+    }
+}
+
+@media ( max-width: 768px ) {
+
+    .login .panel-ingreso {
+        order:  1 ;
+        height: 60% ;
+    }
+
+    .login .panel-ingreso .titulo {
+        width:          100% ;
+        height:         auto ;
+        margin:         .1rem auto ;
+        display:        flex ;
+        flex-direction: column ;
+        text-align:     center ;
+        justify-items:  center ;
+    }
+
+    .login .titulo label:nth-child(1) {
+        font-size: 1.5rem ; 
+    }
+
+    .login .panel-ingreso .formulario {
+        width:  100% ;
+        height: auto ;
+    }
+
+    .login #username {
+        width:      60vw ;
+        height:     5vh ;
+        font-size: .85rem ;
+    }
+
+    .login #username::placeholder {
+        font-size: 1rem ;
+    }
+
+    .login #password {
+        width:      60vw ;
+        height:     5vh ;
+        font-size: .85rem ;
+    }
+
+    .login #password::placeholder {
+        font-size: 1rem ;
+    }
+
+    #form-login .btn {
+        margin: 1.6rem auto ;
+    }
+
+    .login #aceptar {
+        width: 30vw ;
+        height: 6vh ;
+    }
+
+    .login .panel-bienvenida {
+        order:  2 ;
+        height: 40% ;
+    }
+
+    .login .panel-bienvenida > article {
+        margin:         .5rem auto ;
+        display:        flex ;
+        flex-direction: column ;
+        text-align:     center ;
+        justify-items:  center ;
+    }
+
+    .login .panel-bienvenida h1 {
+        width:     100% ;
+        height:    auto ;
+        margin:    .25rem auto ;
+        padding:   .25rem auto ;
+        font-size: 1.70rem ;
+    }
+
+    .login .panel-bienvenida p {
+        width:      100% ;
+        height:     auto ;
+        margin:    .25rem auto 0 auto ;
+        padding:    0 ;
+        font-size:  1.4rem ;
+    }
+
+    .login .panel-bienvenida .img-login {
+        margin: 0 ;
+    }
+
+    .login .panel-bienvenida .img-login > picture {
+        max-width:  90px ;
+        max-height: 70px ;
+    }
+
+    .login .panel-bienvenida .img-login img {
+        width:  100% ;
+        height: 100% ;
+    }
+}
+
+@media ( max-width: 480px ) {
+
+    .login .panel-ingreso {
+        height: 90% ;
+    }
+
+    .login .panel-bienvenida {
+        height: 10% ;
+    }
+
+    .login .panel-bienvenida img {
+        width:  140px ;
+        height: 140px ;
+    }
+
+    .login #username {
+        width:      80vw ;
+        height:     5vh ;
+        font-size: .85rem ;
+    }
+
+    .login #username::placeholder {
+        font-size: .75rem ;
+    }
+
+    .login #password {
+        width:      80vw ;
+        height:     5vh ;
+        font-size: .85rem ;
+    }
+
+    .login #password::placeholder {
+        font-size: .75rem ;
+    }
+
+    .login #togglePassword i::before {
+        font-size: 1.2rem ;
+    }
+
+    .login #aceptar {
+        width:      40vw ;
+        height:     6vh ;
+        font-size: .75rem ;
+    }
+
+    .login .panel-bienvenida article:nth-child(1) {
+        display: none ;
+    }
+}

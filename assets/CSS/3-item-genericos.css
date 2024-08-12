@@ -1,0 +1,87 @@
+/*
+    1. **Color**: Define el color del texto. 
+    2. **Background**: Controla el color o imagen de fondo. 
+    3. **Font**: Propiedades relacionadas con la tipografía, como  font-size ,  font-family ,  font-weight , etc. 
+    4. **Text**: Propiedades como  text-align ,  text-decoration ,  text-transform , etc. 
+    5. **Border**: Define el borde de un elemento. 
+    6. **Box-shadow**: Agrega sombra a un elemento. 
+    7. **Opacity**: Controla la opacidad de un elemento. 
+    8. **Transition**: Define las transiciones entre estados. 
+    9. **Transform**: Permite aplicar transformaciones como rotación y escalado. 
+    10. **List-style**: Controla el estilo de las listas.
+*/
+
+@import url('./2-layauot.css');
+
+body {
+    background-image:  url('../images/Recurso1.png') ;
+    background-repeat: no-repeat ;
+}
+
+.text-ph1::placeholder {
+    font-size:  1.4rem ;
+}
+
+.texto-btn {
+    font-size:      1rem ; 
+    color:          var( --fondoBlanco ) ;
+    letter-spacing: 2px ;
+}
+
+.texto-blanco {
+    color: var( --fondoBlanco ) ;
+}
+
+.nav-color {
+    background-color: var( --fondoMega ) ;
+}   
+
+.fuente-corben-reg {
+    font-family: "Corben", serif ;
+    font-weight: 400 ;
+    font-style:  normal ;
+}
+
+.fuente-corben-bold {
+    font-family: "Corben", serif ;
+    font-weight: 700 ; 
+    font-style:  normal ;
+}
+
+/*Testing de sombra*/
+.shadow-1 {
+    border:     1px solid #ccc ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5) ; /* Sombra con desplazamiento y difuminado */
+}
+/*Fin de Sombra*/
+
+/*configuración panel para ingresar*/
+.panel-ingreso {
+    background-color: var( --fondoLogin3 ) ;
+}
+/*Fin de panel de ingreso*/
+
+.panel-ingreso .img-usuario > picture > img {
+    border:        solid 1px var( --fondoMega ) ;
+    border-radius: 6rem;
+}
+
+.panel-ingreso .titulo label:nth-child(1) {
+    font-size: 3rem ;
+}
+
+.panel-bienvenida {
+    background-color: var( --fondoMega ) ;
+}
+
+.panel-bienvenida > article > h1 {
+    font-size: 3rem ;
+}
+
+.panel-bienvenida > article > p {
+    font-size: 2rem ;
+}
+
+#root > main > label {
+    color: var( --fondoBlanco ) ;
+}

@@ -1,0 +1,110 @@
+@import url('./4-list.css');
+
+/* Ajusta el contenedor al contenido del input del formulario */
+.field-user {
+    position: relative ;
+    width:    fit-content ;
+}
+
+.field-user input[type="email"] {
+    width:         25rem ;                      /* Ajusta el ancho según tus necesidades */
+    height:        3rem ;                       /* Ajusta la altura según tus necesidades */
+    padding-left:  2.5rem ;                       /* Ajusta el padding para dar espacio al ícono */
+    font-size:     1.25rem ;                    /* Modificar el tamaño de la letra del Mail */
+    box-sizing:    border-box ;                 /* Para incluir padding y borde en el tamaño total del input */
+    border:        solid .0625rem var(--fondoMega) ; /* Definimos el color del border del boton*/
+    border-radius: 3.125rem ;                   /* Define el radio en el input */
+}
+
+.field-user::before {
+    content:           '' ;
+    position:          absolute ;        
+    left:              .625rem ;                                    /* Ajusta la posición horizontal del ícono */
+    top:               50% ;
+    transform:         translateY(-50%) ;
+    width:             1.25rem ;                                    /* Ajusta el ancho del ícono */
+    height:            1.25rem ;                                    /* Ajusta la altura del ícono */
+    background-image:  url('../images/correo-electronico.png'); /* Ruta al ícono PNG */
+    background-size:   cover ;                                   /* Ajusta el tamaño del ícono */
+    background-repeat: no-repeat ;                               /* Evita que se repita la imagen*/
+}
+/*Fin del ajuste del contenedor input formulario*/
+
+/* Ajusta el contenedor al contenido */
+.field-password {
+    position: relative ;
+    width:    fit-content ;
+}
+
+.field-password #password {
+    width:         25rem ;                      /* Ajusta el ancho según tus necesidades */
+    height:        3rem ;                        /* Ajusta la altura según tus necesidades */
+    padding-left:  2.5rem ;                       /* Ajusta el padding para dar espacio al ícono */
+    font-size:     1.25rem ;                    /* Modificar el tamaño de la letra del password */
+    box-sizing:    border-box ;                 /* Para incluir padding y borde en el tamaño total del input */
+    border:        solid .0625rem var(--fondoMega) ; /*Definimos el color del border del boton*/
+    border-radius: 3.125rem ;                   /* Define el radio en el input */
+}
+
+.field-password::before {
+    content:          '' ;
+    position:         absolute ;        
+    left:             .625rem ;                         /* Ajusta la posición horizontal del ícono */
+    top:              50% ;
+    transform:        translateY(-50%) ;
+    width:            1.25rem ;                         /* Ajusta el ancho del ícono */
+    height:           1.25rem ;                         /* Ajusta la altura del ícono */
+    background-image: url('../IMAGES/candado.png') ; /* Ruta al ícono PNG */
+    background-size:  cover ;                        /* Ajusta el tamaño del ícono */
+    background-repeat:no-repeat ;                    /* Evita que se repita la imagen*/
+    z-index:          1000 ;
+}
+
+.input-container {
+    position: relative ;
+}
+
+.formulario fieldset:nth-child(1) {
+    margin: 0 0 2rem 0 ;
+}
+
+/*Formato del diseño del botón*/
+.formulario fieldset:nth-child(3) {
+    margin:  3rem 0 ;
+    padding: 1rem ;
+}
+
+.formulario .btn {
+    display:         flex ;
+    justify-content: center ;
+    align-items:     center ;
+}
+
+#aceptar {
+    width:            15rem ;
+    height:           3rem ;
+    position:         absolute ;
+    background-color: var(--fondoMega ) ;
+    border-radius:    2rem ;
+    opacity:          1 ;
+    z-index:          10 ;
+}
+/*Fin de Formatos diseño de Boton*/
+
+.password-input {
+    width:         100% ;
+    padding-right: 2.5rem ;
+    box-sizing:    border-box ;
+}
+
+.toggle-password {
+    position:  absolute ;
+    top:       25% ;
+    right:     .625rem ;
+    transform: translate(-50%) ;
+    cursor:    pointer ;
+}
+
+.fas, .fa-eye-slash {
+    font-size: 1.2rem ; /* Ajusta el tamaño del ícono según sea necesario */
+}
